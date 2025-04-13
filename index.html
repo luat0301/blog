@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <style>
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+            background-size: 800% 800%;
+            animation: gradientBackground 10s ease infinite;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .avatar {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .avatar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(68, 68, 68, 0.9);
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .post {
+            background: #f9f9f9;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .post h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .post p {
+            line-height: 1.6;
+        }
+
+        .post img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <p>Nguyễn Định Luật</p>
+        <div class="avatar">
+            <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t1.15752-9/489379815_1179962423456636_9063792061643959777_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=bnQ1r1YHC2AQ7kNvwFpWuVf&_nc_oc=AdlUlCAxLnqH6MRlEyLO5tIk5LGpv-9j9rXh7MtGxGMiLhijn49LOqlqFRimwCpOHWQ&_nc_zt=23&_nc_ht=scontent.fhan14-3.fna&oh=03_Q7cD2AEgAr9R69GXHBpX-g8FmNhoH9FoOU1oO4g4is7uqPPc6w&oe=68235F02" alt="Avatar">
+        </div>
+        
+    </header>
+
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">About</a>
+        <a href="lienhe.html">Liên hệ</a>
+    </nav>
+
+    <div class="container">
+        <div class="post">
+            <h2>First Blog Post</h2>
+            <p><strong>Published on:</strong> January 22, 2025</p>
+            <img src="https://i.imgur.com/xxC6ctl.png" alt="Example Image for First Post">
+            <p>chơi game.</p>
+        </div>
+
+        <div class="post">
+            <h2>Another Blog Post</h2>
+            <p><strong>Published on:</strong> January 21, 2025</p>
+            <img src="https://i.imgur.com/4UAP05Q.png" alt="Example Image for Another Post">
+            <p>xem đã bóng.</p>
+        </div>
+
+        <div class="post">
+            <h2>Another Blog Post</h2>
+            <p><strong>Published on:</strong> January 21, 2025</p>
+            <video width="640" height="360" controls autoplay loop muted poster="poster.jpg">
+                <source src="https://i.imgur.com/ei9WHx7.mp4" type="video/ogg">
+            </video>
+            <p>đi bão.</p>
+        </div>
+
+        <div class="post">
+            <h2>Another Blog Post</h2>
+            <p><strong>Published on:</strong> January 21, 2025</p>
+            <img src="https://i.imgur.com/q1rBrVe.jpeg" alt="Example Image for Another Post">
+            <p>được hôm đi net.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
